@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>OTTEC - Environnement & biodiversité</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/Naturedessols_1.js"></script><script src="layers/LimitesgologiquesduPaysdeBray_2.js"></script><script src="layers/Formationsherbaces_3.js"></script><script src="layers/Autresformationsligneuses_4.js"></script><script src="layers/Formationarbustivesetsousarbrisseaux_5.js"></script><script src="layers/Peuplementdeconifres_6.js"></script><script src="layers/Peuplementdefeuillus_7.js"></script><script src="layers/Surfacesdeau_8.js"></script><script src="layers/Zonesautrematriauxcomposites_9.js"></script><script src="layers/Zonesmatriauxminraux_10.js"></script><script src="layers/Zonesnonbties_11.js"></script><script src="layers/Zonesbties_12.js"></script><script src="layers/Surfacesnonartificialises_13.js"></script><script src="layers/Surfacesartificialises_14.js"></script><script src="layers/ZNIEFFType2_15.js"></script><script src="layers/ZNIEFFType1_16.js"></script><script src="layers/Zoneshumides_17.js"></script><script src="layers/SitesNatura2000_18.js"></script><script src="layers/SiteNatura2000PaysdeBrayHumide_19.js"></script><script src="layers/ZAPCuestas_20.js"></script><script src="layers/Sitesnaturelsclasss_21.js"></script><script src="layers/Sitesnaturelsinscrits_22.js"></script><script src="layers/CommunesensitePaysdeBrayHumide_23.js"></script><script src="layers/Tramebocagre_24.js"></script><script src="layers/Rservoirsboiss_25.js"></script><script src="layers/Corridorshumides_26.js"></script><script src="layers/Rservoirshumides_27.js"></script><script src="layers/Dpriseagricole_28.js"></script><script src="layers/Rseaucalcicolepotentiel_29.js"></script><script src="layers/Rservoirscalcicoles_30.js"></script><script src="layers/Tramecalcicole_31.js"></script><script src="layers/Rservoirssilicicoles_32.js"></script><script src="layers/Primtresdepointsdecaptages_33.js"></script><script src="layers/Corridorsaquatiques_34.js"></script><script src="layers/Rservoirsaquatiques_35.js"></script><script src="layers/SMBVdelEpte_36.js"></script><script src="layers/SMBVdelAndelle_37.js"></script><script src="layers/SMBVdelaBresle_38.js"></script><script src="layers/SMBVdelYres_39.js"></script><script src="layers/SMBVdelArques_40.js"></script><script src="layers/SMBVCaillyAubetteRobec_41.js"></script><script src="layers/Zonesdevgtation_42.js"></script><script src="layers/HabitatsdIntrtCommunautaire_43.js"></script><script src="layers/Haies_44.js"></script><script src="layers/Surfaceshydrographiques_45.js"></script><script src="layers/Coursdeau_46.js"></script><script src="layers/Mares_47.js"></script><script src="layers/Sitespollus_48.js"></script><script src="layers/SitesBASOL_49.js"></script><script src="layers/SAEPABraySudBacRouvrayCatillon_50.js"></script><script src="layers/SAEPABraySudBacMesnilLieubray_51.js"></script><script src="layers/SAEPABraySudBacGisors_52.js"></script><script src="layers/SIAEPA3SourcesBacSommery_53.js"></script><script src="layers/SIAEPA3SourcesBacMonterolier_54.js"></script><script src="layers/SIAEPA02BrayBacStGermainsurEaulne_55.js"></script><script src="layers/SIAEPA02BrayBacNeuvilles_56.js"></script><script src="layers/SIAEPA02BrayBacNesleHodengBeaussault_57.js"></script><script src="layers/SIAEPA02BrayBacMesnires_58.js"></script><script src="layers/SIAEPA02BrayBacEsclavelles_59.js"></script><script src="layers/SIAEPA02BrayBacBully_60.js"></script><script src="layers/Foyersfloristiques_61.js"></script><script src="layers/Linairedcrevissespiedsblancs_62.js"></script><script src="layers/Foyersdcrevissespiedsblancs_63.js"></script><script src="layers/LinairedcrevissesdeCalifornie_64.js"></script><script src="layers/FoyersdcrevissesdeCalifornie_65.js"></script><script src="layers/Tourbire_66.js"></script><script src="layers/Observationsfaunistiquesetfloristiques_67.js"></script><script src="layers/InventaireOBHEN_68.js"></script><script src="layers/Quelquesespcesenjeuxdeprservation_69.js"></script><script src="layers/Inventairesparanne_70.js"></script><script src="layers/PopulationpiscicoledIntrtCommunautaire_71.js"></script><script src="layers/AgriondeMercure_72.js"></script><script src="layers/Chauvessouris_73.js"></script><script src="layers/Grenouillescrapauds_74.js"></script><script src="layers/Scarabepiqueprune_75.js"></script><script src="layers/Tritoncrtinventaireparanne_76.js"></script><script src="layers/MaresTritoncrtPrsencehistorique_77.js"></script><script src="layers/MaresTritoncrtPrsencedepuis2012_78.js"></script><script src="layers/Altitude_79.js"></script><script src="layers/CommunautdeCommunesBrayEawy_80.js"></script><script src="layers/CommunautdeCommunesdeLondinires_81.js"></script><script src="layers/CommunautdeCommunesdes4Rivires_82.js"></script><script src="layers/PETRduPaysdeBray_83.js"></script><script src="layers/Communes_84.js"></script>
+        <script src="styles/Naturedessols_1_style.js"></script><script src="styles/LimitesgologiquesduPaysdeBray_2_style.js"></script><script src="styles/Formationsherbaces_3_style.js"></script><script src="styles/Autresformationsligneuses_4_style.js"></script><script src="styles/Formationarbustivesetsousarbrisseaux_5_style.js"></script><script src="styles/Peuplementdeconifres_6_style.js"></script><script src="styles/Peuplementdefeuillus_7_style.js"></script><script src="styles/Surfacesdeau_8_style.js"></script><script src="styles/Zonesautrematriauxcomposites_9_style.js"></script><script src="styles/Zonesmatriauxminraux_10_style.js"></script><script src="styles/Zonesnonbties_11_style.js"></script><script src="styles/Zonesbties_12_style.js"></script><script src="styles/Surfacesnonartificialises_13_style.js"></script><script src="styles/Surfacesartificialises_14_style.js"></script><script src="styles/ZNIEFFType2_15_style.js"></script><script src="styles/ZNIEFFType1_16_style.js"></script><script src="styles/Zoneshumides_17_style.js"></script><script src="styles/SitesNatura2000_18_style.js"></script><script src="styles/SiteNatura2000PaysdeBrayHumide_19_style.js"></script><script src="styles/ZAPCuestas_20_style.js"></script><script src="styles/Sitesnaturelsclasss_21_style.js"></script><script src="styles/Sitesnaturelsinscrits_22_style.js"></script><script src="styles/CommunesensitePaysdeBrayHumide_23_style.js"></script><script src="styles/Tramebocagre_24_style.js"></script><script src="styles/Rservoirsboiss_25_style.js"></script><script src="styles/Corridorshumides_26_style.js"></script><script src="styles/Rservoirshumides_27_style.js"></script><script src="styles/Dpriseagricole_28_style.js"></script><script src="styles/Rseaucalcicolepotentiel_29_style.js"></script><script src="styles/Rservoirscalcicoles_30_style.js"></script><script src="styles/Tramecalcicole_31_style.js"></script><script src="styles/Rservoirssilicicoles_32_style.js"></script><script src="styles/Primtresdepointsdecaptages_33_style.js"></script><script src="styles/Corridorsaquatiques_34_style.js"></script><script src="styles/Rservoirsaquatiques_35_style.js"></script><script src="styles/SMBVdelEpte_36_style.js"></script><script src="styles/SMBVdelAndelle_37_style.js"></script><script src="styles/SMBVdelaBresle_38_style.js"></script><script src="styles/SMBVdelYres_39_style.js"></script><script src="styles/SMBVdelArques_40_style.js"></script><script src="styles/SMBVCaillyAubetteRobec_41_style.js"></script><script src="styles/Zonesdevgtation_42_style.js"></script><script src="styles/HabitatsdIntrtCommunautaire_43_style.js"></script><script src="styles/Haies_44_style.js"></script><script src="styles/Surfaceshydrographiques_45_style.js"></script><script src="styles/Coursdeau_46_style.js"></script><script src="styles/Mares_47_style.js"></script><script src="styles/Sitespollus_48_style.js"></script><script src="styles/SitesBASOL_49_style.js"></script><script src="styles/SAEPABraySudBacRouvrayCatillon_50_style.js"></script><script src="styles/SAEPABraySudBacMesnilLieubray_51_style.js"></script><script src="styles/SAEPABraySudBacGisors_52_style.js"></script><script src="styles/SIAEPA3SourcesBacSommery_53_style.js"></script><script src="styles/SIAEPA3SourcesBacMonterolier_54_style.js"></script><script src="styles/SIAEPA02BrayBacStGermainsurEaulne_55_style.js"></script><script src="styles/SIAEPA02BrayBacNeuvilles_56_style.js"></script><script src="styles/SIAEPA02BrayBacNesleHodengBeaussault_57_style.js"></script><script src="styles/SIAEPA02BrayBacMesnires_58_style.js"></script><script src="styles/SIAEPA02BrayBacEsclavelles_59_style.js"></script><script src="styles/SIAEPA02BrayBacBully_60_style.js"></script><script src="styles/Foyersfloristiques_61_style.js"></script><script src="styles/Linairedcrevissespiedsblancs_62_style.js"></script><script src="styles/Foyersdcrevissespiedsblancs_63_style.js"></script><script src="styles/LinairedcrevissesdeCalifornie_64_style.js"></script><script src="styles/FoyersdcrevissesdeCalifornie_65_style.js"></script><script src="styles/Tourbire_66_style.js"></script><script src="styles/Observationsfaunistiquesetfloristiques_67_style.js"></script><script src="styles/InventaireOBHEN_68_style.js"></script><script src="styles/Quelquesespcesenjeuxdeprservation_69_style.js"></script><script src="styles/Inventairesparanne_70_style.js"></script><script src="styles/PopulationpiscicoledIntrtCommunautaire_71_style.js"></script><script src="styles/AgriondeMercure_72_style.js"></script><script src="styles/Chauvessouris_73_style.js"></script><script src="styles/Grenouillescrapauds_74_style.js"></script><script src="styles/Scarabepiqueprune_75_style.js"></script><script src="styles/Tritoncrtinventaireparanne_76_style.js"></script><script src="styles/MaresTritoncrtPrsencehistorique_77_style.js"></script><script src="styles/MaresTritoncrtPrsencedepuis2012_78_style.js"></script><script src="styles/Altitude_79_style.js"></script><script src="styles/CommunautdeCommunesBrayEawy_80_style.js"></script><script src="styles/CommunautdeCommunesdeLondinires_81_style.js"></script><script src="styles/CommunautdeCommunesdes4Rivires_82_style.js"></script><script src="styles/PETRduPaysdeBray_83_style.js"></script><script src="styles/Communes_84_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
